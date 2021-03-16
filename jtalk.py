@@ -6,6 +6,7 @@ import pandas as pd
 from random import randrange
 import altair as alt
 import matplotlib.pyplot as plt
+import xlrd
 
 # import data
 img_logo = Image.open('logo.png')
