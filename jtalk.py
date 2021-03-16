@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 # import data
 img_logo = Image.open('logo.png')
-white_img = Image.open('white.png')
+white_img = Image.open('white.PNG')
 df_text = pd.read_excel('performance_campagne.xlsx')
 
 
