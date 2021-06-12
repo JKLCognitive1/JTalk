@@ -30,8 +30,8 @@ st.markdown("""
 
 # side bar
 st.sidebar.image(img_logo, width = 180)
-st.sidebar.button("Connettore Dati Clienti")
-st.sidebar.button("Import CSV")
+#st.sidebar.button("Connettore Dati Clienti")
+#st.sidebar.button("Import CSV")
 
 ######################### INTRO #########################
 with header:
