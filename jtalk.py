@@ -105,11 +105,11 @@ with storico:
     df_mean_values = df_mean_values.query('ID == "MEAN"')
     df_max_values =  df_campaign[df_campaign.OR == df_campaign.OR.max()]
     df_spider = df_mean_values.append(df_max_values).reset_index(drop = True)
-    df_spider = df_spider[['CURIOSITA', 'SCARSITA', 'CONVENIENZA', 'PERSONALIZZAZIONE', 'CONFRONTO', 'LUNGHEZZA', 'BOOSTER', 'COLORI']]
+    df_spider = df_spider[['CURIOSITA', 'SCARSITA', 'CONVENIENZA', 'PERSONALIZZAZIONE', 'CONFRONTO', 'LUNGHEZZA', 'BOOSTER', 'URGENZA']]
 
     markers = [0, 1, 2, 3, 4, 5]
     str_markers = ["0", "1", "2", "3", "4", "5"]
-    labels = np.array(['CURIOSITA', 'SCARSITA', 'CONVENIENZA', 'PERSONALIZZAZIONE', 'CONFRONTO', 'LUNGHEZZA', 'BOOSTER', 'COLORI'])
+    labels = np.array(['CURIOSITA', 'SCARSITA', 'CONVENIENZA', 'PERSONALIZZAZIONE', 'CONFRONTO', 'LUNGHEZZA', 'BOOSTER', 'URGENZA'])
     angles = np.linspace(0, 2*np.pi, len(labels), endpoint=False)
     angles = np.concatenate((angles,[angles[0]]))
     fig= plt.figure()
@@ -175,11 +175,11 @@ with copy:
         df_mean_values = df_mean_values.query('ID == "MEAN"')
         df_max_values =  df_campaign[df_campaign.OR == df_campaign.OR.max()]
         df_spider = df_mean_values.append(df_max_values).reset_index(drop = True)
-        df_spider = df_spider[['CURIOSITA', 'SCARSITA', 'CONVENIENZA', 'PERSONALIZZAZIONE', 'CONFRONTO', 'LUNGHEZZA', 'BOOSTER', 'COLORI']]
+        df_spider = df_spider[['CURIOSITA', 'SCARSITA', 'CONVENIENZA', 'PERSONALIZZAZIONE', 'CONFRONTO', 'LUNGHEZZA', 'BOOSTER', 'URGENZA']]
 
         markers = [0, 1, 2, 3, 4, 5]
         str_markers = ["0", "1", "2", "3", "4", "5"]
-        labels = np.array(['CURIOSITA', 'SCARSITA', 'CONVENIENZA', 'PERSONALIZZAZIONE', 'CONFRONTO', 'LUNGHEZZA', 'BOOSTER', 'COLORI'])
+        labels = np.array(['CURIOSITA', 'SCARSITA', 'CONVENIENZA', 'PERSONALIZZAZIONE', 'CONFRONTO', 'LUNGHEZZA', 'BOOSTER', 'URGENZA'])
         angles = np.linspace(0, 2*np.pi, len(labels), endpoint=False)
         angles = np.concatenate((angles,[angles[0]]))
         fig= plt.figure()
